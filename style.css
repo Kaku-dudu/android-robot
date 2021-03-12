@@ -1,0 +1,105 @@
+h1 {
+  text-align: center;
+}
+/* use flex-direction to make body in the center or eveery part use margin:o auto;  */
+.robot {
+
+  display: flex; 
+  align-items: center;
+  flex-direction: column;
+}
+.head,
+.left-arm,
+.right-arm,
+.body,
+.left-leg,
+.right-leg {
+  background-color: #5f93e8;
+}
+/*  -----------head ------------------*/
+.head {
+  width: 200px;
+  height: 150px;
+  border-radius: 200px 200px 0 0;
+  /*! margin: 0 auto; */
+  margin-bottom: 10px;
+}
+.eyes {
+  display: flex;
+}
+.left-eye,
+.right-eye {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50px;
+}
+.left-eye {
+  position: relative;
+  top: 100px;
+  left: 40px;
+}
+.right-eye {
+  position: relative;
+  top: 100px;
+  left: 120px;
+}
+.head:hover {
+  width: 300px;
+  transition: 1s ease-in-out;
+  background-color: yellowgreen;
+}
+/* ----------------------upper body------------------------ */
+.left-arm,
+.right-arm {
+  width: 40px;
+  height: 125px;
+  border-radius: 100px;
+}
+.body {
+  width: 200px;
+  height: 200px;
+  border-radius: 0 0 50px 50px;
+}
+.upper-body {
+  display: flex;
+  width: 300px;
+  height: 150px;
+
+  /*! margin: 0 auto; */
+}
+.left-arm {
+  margin-right: 10px;
+}
+.right-arm {
+  margin-left: 10px;
+}
+.left-arm:hover,
+.right-arm:hover {
+  transform: rotate(160deg);
+}
+
+/* --------------------lower body------------------------------ */
+.right-leg,
+.left-leg {
+  width: 40px;
+  height: 120px;
+  border-radius: 0 0 50px 50px;
+}
+div .lower-body {
+  width: 200px;
+  height: 200px;
+
+  display: flex;
+  /*! margin: 0 auto; */
+}
+.left-leg {
+  margin-left: 45px;
+}
+.right-leg {
+  margin-left: 30px;
+}
+.left-leg:hover,
+.right-leg:hover{
+  transform: rotate(30deg);
+}
